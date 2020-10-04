@@ -6,7 +6,8 @@ public  interface ICommand
 {
     
     int Index { get; set; }
-    int Amount { get; set; }
-    bool CommandTurn { get; set; }
-    IEnumerator Execute();
+    bool MoveForward { get; set; }
+
+    bool TurnLeft { get; set; }
+    bool TurnRight { get; set; }
 }
